@@ -14,7 +14,7 @@ class Message < ApplicationRecord
     validates :body, presence: true
 
     # Scopes
-
+    scope :custom_display, -> { order(:created_at).last(20) }
     # Callbacks
 
     # Constants Methods
