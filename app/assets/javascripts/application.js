@@ -21,3 +21,9 @@
 $(document).on('turbolinks:load', function() {
     $('.ui.dropdown').dropdown();
 })
+
+$(document).ready(function(){
+    setTimeout(function(){
+      $('#flash').remove();
+    }, 4000);
+})
