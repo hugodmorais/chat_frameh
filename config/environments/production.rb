@@ -91,4 +91,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_cable.url = "wss://chatframeh.herokuapp.com/cable" 
+  config.action_cable.allowed_request_origins = ['https://chatframeh.herokuapp.com', 'http://chatframeh.herokuapp.com']
+  config.serve_static_assets = true
 end
